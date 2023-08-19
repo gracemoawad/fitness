@@ -1,0 +1,38 @@
+     <?php    //workouts added by the admin  
+
+require_once 'connection.php';
+// Fetch the inserted workout details from the database
+$query = "SELECT * FROM workouts WHERE workoutID ";
+$result = mysqli_query($con, $query);
+
+if ($result && mysqli_num_rows($result) > 0) {
+    $row = mysqli_fetch_assoc($result);
+    $name = $row["name"];
+    $level = $row["level"];
+    $instruction_1 = $row["instruction_1"];
+$instruction_2 = $row["instruction_2"];
+    $image_url1 = $row["image_url1"];
+    $image_url2 = $row["image_url2"];
+ 
+    // Other columns' data can be fetched similarly
+}
+?>
+           
+<div id="poti">
+    <p id="sas"><?php  echo $name; ?><hr></p>
+    <i id="ip"><bold>Difficulty</bold>: <?php echo $level; ?></i>
+</div>
+<div>
+<img src="<?php echo $image_url1; ?>" id="photo1" width="400" height="400"/>
+    <img src="<?php echo $image_url2; ?>" id="photo2" width="400" height="400"/>
+</div>
+<div id="saz">
+<div>
+                        <p><i id="number">1</i><?php echo $instruction_1 ?>
+ </p>
+</div>
+
+<div>
+                       <p><i id="number">2</i><?php echo $instruction_2 ?></p>
+ </div>
+</div>

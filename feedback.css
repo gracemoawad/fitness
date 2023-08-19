@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+.feedback-container {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #02ffaf;
+    background-color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #07513a;
+}
+
+.ratings {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.rating {
+    font-size: 28px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.rating:hover,
+.rating.active {
+    color: #02ffaf;
+}
+
+#comments {
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    /* Adjust the height as needed */
+    resize: vertical;
+    padding: 10px;
+    border: 1px solid #02ffaf;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    /* Ensure padding and border don't affect the width */
+}
+
+#submitBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #02ffaf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#resetBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #02ffaf;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+    background-color: #02ffaf;
+}

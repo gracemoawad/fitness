@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>edit workout</title>
+        <link href="admin.css" rel="stylesheet">
+    </head>
+    <body>
+        <a href="dbusers.php"><button class="primary-1">SHOW USERS</button></a>
+        <br>
+        <a href="showworkout.php"><button class="primary-1">SHOW WORKOUTS</button></a>
+        <form method ="post" action="addworkout.php">
+            <table border="5">
+                <tr>
+                    <td>workoutID</td>
+                    <td><input type="text" name="workoutID" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>WorkoutName</td>
+                    <td><input type="text" name="name" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>Level</td>
+                    <td><input type="text" name="level" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td><input type="text" name="type" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td><input type="text" name="image" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>
+                       <input type="submit" value="ADD WORKOUT"/> 
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <form method ="post" action="deleteworkout.php">
+            <table border=5>
+                <tr>
+                    <td>workoutID</td>
+                    <td><input type="text" name="workoutID" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>WorkoutName</td>
+                    <td><input type="text" name="WorkoutName" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>level</td>
+                    <td><input type="text" name="status" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td><input type="text" name="salary" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td><input type="text" name="image" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>
+                       <input type="submit" value="DELETE WORKOUT"/> 
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <form method ="post" action="deleteusers.php">
+            <table border=5>
+                <tr>
+                    <td>UserID</td>
+                    <td><input type="text" name="UserID" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="Name" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>address</td>
+                    <td><input type="text" name="address" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email" size="20"/></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="text" name="phone" size="20"/></td>
+                </tr>
+                
+                <tr>
+                    <td>
+                       <input type="submit" value="DELETE USER"/> 
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
